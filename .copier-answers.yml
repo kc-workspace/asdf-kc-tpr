@@ -1,0 +1,58 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.3.0
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: false
+    checksum: true
+    download: true
+    fetch: true
+    git: false
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: false
+    system: true
+    tags: true
+    version: false
+app_desc: Parse template using input data file (or options)
+app_name: kc-tpr
+app_repo: https://github.com/kamontat/tpr
+app_type: standalone
+app_website: https://github.com/kamontat/tpr
+archive_enabled: false
+checksum_conf_algorithm: 256
+checksum_enabled: true
+checksum_url: https://github.com/kamontat/tpr/releases/download/v{version}/checksums_{version}.txt
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: ''
+download_url: https://github.com/kamontat/tpr/releases/download/v{version}/kc-tpr_{version}_{os}_{arch}
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: move
+install_map_yaml:
+    kc-tpr: bin/kc-tpr
+package_enabled: false
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-kc-tpr
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-kc-tpr.git
+source_enabled: false
+sys_arch_enabled: true
+sys_arch_yaml:
+    aarch64*: arm64
+    armv5*: armv6
+    armv6*: armv6
+    armv7*: armv6
+    i386: '386'
+    i686: '386'
+    x86: '386'
+    x86_64: amd64
+sys_ext_enabled: false
+sys_os_enabled: false
+test_cmd_args: --version
+version_file_enabled: false
+version_prefix: v
